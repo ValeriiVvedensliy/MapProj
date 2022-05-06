@@ -7,5 +7,6 @@ target 'MapProj' do
 
   # Pods for MapProj
   pod 'GoogleMaps'
-
+  pod 'Polyline', '~> 5.0'
+  pod 'RealmSwift'
 end
