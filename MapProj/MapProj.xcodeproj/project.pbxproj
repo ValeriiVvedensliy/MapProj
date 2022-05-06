@@ -14,6 +14,9 @@
 		E04B13DC28147BF000058026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E04B13DA28147BF000058026 /* Main.storyboard */; };
 		E04B13DE28147BF300058026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E04B13DD28147BF300058026 /* Assets.xcassets */; };
 		E04B13E128147BF300058026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E04B13DF28147BF300058026 /* LaunchScreen.storyboard */; };
+		E04B1436281DCAE500058026 /* Button+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04B1435281DCAE500058026 /* Button+Extensions.swift */; };
+		E0C8AB8428245B4200DA36E9 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C8AB8328245B4200DA36E9 /* Route.swift */; };
+		E0C8AB8628245ECD00DA36E9 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C8AB8528245ECD00DA36E9 /* Coordinate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		E04B13DD28147BF300058026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E04B13E028147BF300058026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E04B13E228147BF300058026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E04B1435281DCAE500058026 /* Button+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Extensions.swift"; sourceTree = "<group>"; };
+		E0C8AB8328245B4200DA36E9 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		E0C8AB8528245ECD00DA36E9 /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +62,6 @@
 				153AB330DAEA1B384A468B8D /* Pods-MapProj.debug.xcconfig */,
 				85276DA6B059FEECE36C5733 /* Pods-MapProj.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +86,8 @@
 		E04B13D328147BF000058026 /* MapProj */ = {
 			isa = PBXGroup;
 			children = (
+				E0C8AB81282438EA00DA36E9 /* Models */,
+				E04B1434281DCACD00058026 /* Extensions */,
 				E04B13D428147BF000058026 /* AppDelegate.swift */,
 				E04B13D628147BF000058026 /* SceneDelegate.swift */,
 				E04B13D828147BF000058026 /* ViewController.swift */,
@@ -90,6 +97,31 @@
 				E04B13E228147BF300058026 /* Info.plist */,
 			);
 			path = MapProj;
+			sourceTree = "<group>";
+		};
+		E04B1434281DCACD00058026 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E04B1435281DCAE500058026 /* Button+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E0C8AB81282438EA00DA36E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E0C8AB82282438F300DA36E9 /* Realm */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E0C8AB82282438F300DA36E9 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				E0C8AB8328245B4200DA36E9 /* Route.swift */,
+				E0C8AB8528245ECD00DA36E9 /* Coordinate.swift */,
+			);
+			path = Realm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,6 +136,7 @@
 				E04B13CE28147BF000058026 /* Frameworks */,
 				E04B13CF28147BF000058026 /* Resources */,
 				635D750457F504913328C0B3 /* [CP] Copy Pods Resources */,
+				82023F31BC6C717131FA25F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +211,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapProj/Pods-MapProj-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		82023F31BC6C717131FA25F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapProj/Pods-MapProj-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapProj/Pods-MapProj-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapProj/Pods-MapProj-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C72C418851AF8DA00EAB9A95 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -208,8 +258,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E04B13D928147BF000058026 /* ViewController.swift in Sources */,
+				E04B1436281DCAE500058026 /* Button+Extensions.swift in Sources */,
 				E04B13D528147BF000058026 /* AppDelegate.swift in Sources */,
+				E0C8AB8428245B4200DA36E9 /* Route.swift in Sources */,
 				E04B13D728147BF000058026 /* SceneDelegate.swift in Sources */,
+				E0C8AB8628245ECD00DA36E9 /* Coordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +413,8 @@
 				DEVELOPMENT_TEAM = 7BZ6VJ9448;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MapProj/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = NSLocationAlwaysAndWhenInUseUsageDescription;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Очень нада!!!!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -389,6 +444,8 @@
 				DEVELOPMENT_TEAM = 7BZ6VJ9448;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MapProj/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = NSLocationAlwaysAndWhenInUseUsageDescription;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Очень нада!!!!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
