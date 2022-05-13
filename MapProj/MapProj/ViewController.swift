@@ -10,8 +10,10 @@ import GoogleMaps
 import MapKit
 import Polyline
 import RealmSwift
+import RxFlow
+import RxRelay
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, Stepper {
   @IBOutlet weak var mapView: GMSMapView!
   @IBOutlet weak var firstPointField: UITextField!
   @IBOutlet weak var secondPointField: UITextField!
@@ -35,6 +37,7 @@ class ViewController: UIViewController {
   var iPosition: Int = 0
   var realm = try! Realm()
   var isRouteStopped = false
+  var steps = PublishRelay<Step>()
   
   override func viewDidLoad() {
     super.viewDidLoad()

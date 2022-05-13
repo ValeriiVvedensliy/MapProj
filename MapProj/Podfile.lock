@@ -1,4 +1,5 @@
 PODS:
+  - Differentiator (5.0.0)
   - GoogleMaps (6.1.1):
     - GoogleMaps/Maps (= 6.1.1)
   - GoogleMaps/Base (6.1.1)
@@ -10,25 +11,62 @@ PODS:
   - Realm/Headers (10.25.1)
   - RealmSwift (10.25.1):
     - Realm (= 10.25.1)
+  - Reusable (4.1.2):
+    - Reusable/Storyboard (= 4.1.2)
+    - Reusable/View (= 4.1.2)
+  - Reusable/Storyboard (4.1.2)
+  - Reusable/View (4.1.2)
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxDataSources (5.0.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxFlow (2.13.0):
+    - RxCocoa (>= 6.0.0)
+    - RxSwift (>= 6.0.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
 
 DEPENDENCIES:
   - GoogleMaps
   - Polyline (~> 5.0)
   - RealmSwift
+  - Reusable
+  - RxCocoa (~> 6.2.0)
+  - RxDataSources (~> 5.0)
+  - RxFlow
+  - RxSwift (~> 6.2.0)
 
 SPEC REPOS:
   trunk:
+    - Differentiator
     - GoogleMaps
     - Polyline
     - Realm
     - RealmSwift
+    - Reusable
+    - RxCocoa
+    - RxDataSources
+    - RxFlow
+    - RxRelay
+    - RxSwift
 
 SPEC CHECKSUMS:
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
   GoogleMaps: 94e6e0851beece6678af9f508f4918b7a7c61722
   Polyline: fce41d72e1146c41c6d081f7656827226f643dff
   Realm: 1a6e9b4f6983711655d8c0bcb6d2d29c3afbb1f3
   RealmSwift: e72669550d27082aa4fad5d176f5076cfe806245
+  Reusable: 6bae6a5e8aa793c9c441db0213c863a64bce9136
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxFlow: 52f6f6379918392c1ea8cb62d8dcf2df9a5463dd
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
 
-PODFILE CHECKSUM: 6b8bdd34ad75d8709f7bd537b4cf33fcf1e7ac5e
+PODFILE CHECKSUM: ef06ae9a5ce90e579a046c9f7ccb9d80d5064be2
 
 COCOAPODS: 1.11.3
