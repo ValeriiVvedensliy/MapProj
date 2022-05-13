@@ -1,0 +1,11 @@
+// MARK: - AButtonViewCell
+"ButtonViewCell.Label.Text" = "Log In";
+"ButtonViewCell.LogIning.Label.Text" = "Log Ining";
+
+// MARK: - ValidationResultCellModel
+"ValidationCellModel.Text" = "Login or password is invalid";
+
+// MARK: - AuthorisationTableViewController
+"AuthorisationTableViewController.TitleCellModel.Title" = "MapS";
+"AuthorisationTableViewController.LoginTextField.Placeholder" = "Login";
+"AuthorisationTableViewController.PasswordTextField.Placeholder" = "Password";
