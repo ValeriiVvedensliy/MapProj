@@ -41,7 +41,7 @@
 		B9518283282ED9790068A165 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9518282282ED9790068A165 /* User.swift */; };
 		E04B13D528147BF000058026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04B13D428147BF000058026 /* AppDelegate.swift */; };
 		E04B13D728147BF000058026 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04B13D628147BF000058026 /* SceneDelegate.swift */; };
-		E04B13D928147BF000058026 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04B13D828147BF000058026 /* ViewController.swift */; };
+		E04B13D928147BF000058026 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04B13D828147BF000058026 /* MapsViewController.swift */; };
 		E04B13DC28147BF000058026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E04B13DA28147BF000058026 /* Main.storyboard */; };
 		E04B13DE28147BF300058026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E04B13DD28147BF300058026 /* Assets.xcassets */; };
 		E04B13E128147BF300058026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E04B13DF28147BF300058026 /* LaunchScreen.storyboard */; };
@@ -88,7 +88,7 @@
 		E04B13D128147BF000058026 /* MapProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E04B13D428147BF000058026 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E04B13D628147BF000058026 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E04B13D828147BF000058026 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E04B13D828147BF000058026 /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		E04B13DB28147BF000058026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E04B13DD28147BF300058026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E04B13E028147BF300058026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -350,7 +350,7 @@
 				E04B1434281DCACD00058026 /* Extensions */,
 				E04B13D428147BF000058026 /* AppDelegate.swift */,
 				E04B13D628147BF000058026 /* SceneDelegate.swift */,
-				E04B13D828147BF000058026 /* ViewController.swift */,
+				E04B13D828147BF000058026 /* MapsViewController.swift */,
 				E04B13DA28147BF000058026 /* Main.storyboard */,
 				E04B13DD28147BF300058026 /* Assets.xcassets */,
 				E04B13DF28147BF300058026 /* LaunchScreen.storyboard */,
@@ -538,7 +538,7 @@
 				B951826B282D93520068A165 /* AppStep.swift in Sources */,
 				B9518261282D93520068A165 /* ButtonTableViewCell.swift in Sources */,
 				B951821F282D91750068A165 /* IcNames.swift in Sources */,
-				E04B13D928147BF000058026 /* ViewController.swift in Sources */,
+				E04B13D928147BF000058026 /* MapsViewController.swift in Sources */,
 				E04B1436281DCAE500058026 /* Button+Extensions.swift in Sources */,
 				B9518268282D93520068A165 /* AuthorisationSectionModel.swift in Sources */,
 				B951825D282D93520068A165 /* TextFieldTableViewCell.swift in Sources */,

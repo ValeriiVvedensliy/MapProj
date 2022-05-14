@@ -37,13 +37,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   }
 
   func sceneDidBecomeActive(_ scene: UIScene) {
-    // Called when the scene has moved from an inactive state to an active state.
-    // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+    guard let windowScene = (scene as? UIWindowScene),
+          let rootViewController = windowScene.keyWindow?.rootViewController
+    else { return }
+
+    hideBlurView(rootViewController)
   }
 
   func sceneWillResignActive(_ scene: UIScene) {
-    // Called when the scene will move from an active state to an inactive state.
-    // This may occur due to temporary interruptions (ex. an incoming phone call).
+    guard let windowScene = (scene as? UIWindowScene),
+          let rootViewController = windowScene.keyWindow?.rootViewController
+    else { return }
+
+    showBlurView(rootViewController)
   }
 
   func sceneWillEnterForeground(_ scene: UIScene) {
@@ -57,6 +63,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // to restore the scene back to its current state.
   }
 
-
+  func showBlurView(_ rootViewController: UIViewController) {
+    let blurEffect = UIBlurEffect(style: .light)
+    let blurEffectView = UIVisualEffectView(effect: blurEffect)
+    blurEffectView.frame = CGRect(origin: .zero, size: UIScreen.main.bounds.size)
+    rootViewController.view.addSubview(blurEffectView)
+  }
+  
+  func hideBlurView(_ rootViewController: UIViewController) {
+    rootViewController.view.subviews.forEach { subview in
+      if subview is UIVisualEffectView {
+        subview.removeFromSuperview()
+      }
+    }
+  }
 }
 

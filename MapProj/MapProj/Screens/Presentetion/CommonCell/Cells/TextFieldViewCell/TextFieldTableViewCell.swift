@@ -58,6 +58,7 @@ class TextFieldTableViewCell: RxTableViewCell<TextFieldCellModel>, NibReusable {
     textField.keyboardAppearance = .dark
     textField.enablesReturnKeyAutomatically = false
     textField.keyboardAppearance = .dark
+    textField.autocorrectionType = .no
   }
 }
 
