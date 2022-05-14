@@ -46,7 +46,7 @@ class AuthorisationFlow: Flow {
   private func navigationToMaps() -> FlowContributors {
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     guard let viewController = storyboard.instantiateViewController(withIdentifier: "MapsViewController")
-            as? ViewController else { return .none }
+            as? MapsViewController else { return .none }
     
     viewController.modalTransitionStyle = .coverVertical
     viewController.modalPresentationStyle = .currentContext

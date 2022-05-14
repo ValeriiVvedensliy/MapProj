@@ -13,7 +13,7 @@ import RealmSwift
 import RxFlow
 import RxRelay
 
-class ViewController: UIViewController, Stepper {
+class MapsViewController: UIViewController, Stepper {
   @IBOutlet weak var mapView: GMSMapView!
   @IBOutlet weak var firstPointField: UITextField!
   @IBOutlet weak var secondPointField: UITextField!
@@ -266,7 +266,7 @@ class ViewController: UIViewController, Stepper {
   }
 }
 
-extension ViewController: GMSMapViewDelegate {
+extension MapsViewController: GMSMapViewDelegate {
   func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
     if geoCoder == nil {
       geoCoder = CLGeocoder()
@@ -305,7 +305,7 @@ extension ViewController: GMSMapViewDelegate {
   }
 }
 
-extension ViewController: CLLocationManagerDelegate {
+extension MapsViewController: CLLocationManagerDelegate {
   func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
       print(error)
   }
