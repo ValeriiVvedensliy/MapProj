@@ -9,3 +9,11 @@
 "AuthorisationTableViewController.TitleCellModel.Title" = "MapS";
 "AuthorisationTableViewController.LoginTextField.Placeholder" = "Login";
 "AuthorisationTableViewController.PasswordTextField.Placeholder" = "Password";
+
+// MARK: - MapsViewController
+"Maps.From" = "   From address";
+"Maps.To" = "   To address";
+"Maps.Stop.Route" = "Stop route";
+"Maps.Start.Route" = "Start route";
+"Maps.Show.Route" = "Show route";
+
