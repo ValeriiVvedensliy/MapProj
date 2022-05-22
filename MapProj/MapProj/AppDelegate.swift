@@ -12,7 +12,7 @@ import GoogleMaps
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    GMSServices.provideAPIKey("AIzaSyC6_iYti5Jj8-0qRT1FyEL-IfS3FFgCzm4") 
+
     return true
   }
 
