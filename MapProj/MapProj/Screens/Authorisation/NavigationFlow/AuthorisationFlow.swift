@@ -48,13 +48,15 @@ class AuthorisationFlow: Flow {
     guard let viewController = storyboard.instantiateViewController(withIdentifier: "MapsViewController")
             as? MapsViewController else { return .none }
     
+    let viewModel = MapsViewModel()
     viewController.modalTransitionStyle = .coverVertical
     viewController.modalPresentationStyle = .currentContext
-  
+    viewController.viewModel = viewModel
+    
     self.navigationController.present(viewController, animated: true)
     return .one(flowContributor: .contribute(
       withNextPresentable: viewController,
-      withNextStepper: viewController)
+      withNextStepper: viewModel)
     )
   }
 }

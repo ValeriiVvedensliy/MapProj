@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5C058DE8E3D5CDA024AA572D /* Pods_MapProj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CCEB18B4E6162EF1CD6298 /* Pods_MapProj.framework */; };
+		B941F2302836D09A00BE841C /* MapsViewController+ManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B941F22F2836D09A00BE841C /* MapsViewController+ManagerDelegate.swift */; };
+		B941F2322836D1EA00BE841C /* MapsViewController+MapViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B941F2312836D1EA00BE841C /* MapsViewController+MapViewDelegate.swift */; };
+		B941F2352836D8CA00BE841C /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = B941F2342836D8CA00BE841C /* Point.swift */; };
 		B951821E282D91750068A165 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B951821C282D91750068A165 /* ColorScheme.swift */; };
 		B951821F282D91750068A165 /* IcNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = B951821D282D91750068A165 /* IcNames.swift */; };
 		B9518258282D93520068A165 /* ValidationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9518225282D93520068A165 /* ValidationTableViewCell.xib */; };
@@ -39,6 +42,12 @@
 		B9518277282D93520068A165 /* AuthorisationTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9518257282D93520068A165 /* AuthorisationTableViewController.xib */; };
 		B951827A282D9A640068A165 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9518279282D9A640068A165 /* Localizable.strings */; };
 		B9518283282ED9790068A165 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9518282282ED9790068A165 /* User.swift */; };
+		B960C08128357C4F000F1CD8 /* MapsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B960C08028357C4F000F1CD8 /* MapsViewModel.swift */; };
+		B960C08428358278000F1CD8 /* Buttons+Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = B960C08328358278000F1CD8 /* Buttons+Reactive.swift */; };
+		B980A18C28381CCB002C67FB /* MapsViewController+Reactive.swift in Sources */ = {isa = PBXBuildFile; fileRef = B980A18B28381CCB002C67FB /* MapsViewController+Reactive.swift */; };
+		B980A18E283984E0002C67FB /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B980A18D283984E0002C67FB /* Coordinates.swift */; };
+		B980A190283A18A8002C67FB /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B980A18F283A18A8002C67FB /* Int+Extensions.swift */; };
+		B980A192283A18D4002C67FB /* FloatingPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B980A191283A18D4002C67FB /* FloatingPoint+Extensions.swift */; };
 		E04B13D528147BF000058026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04B13D428147BF000058026 /* AppDelegate.swift */; };
 		E04B13D728147BF000058026 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04B13D628147BF000058026 /* SceneDelegate.swift */; };
 		E04B13D928147BF000058026 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04B13D828147BF000058026 /* MapsViewController.swift */; };
@@ -54,6 +63,9 @@
 		153AB330DAEA1B384A468B8D /* Pods-MapProj.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapProj.debug.xcconfig"; path = "Target Support Files/Pods-MapProj/Pods-MapProj.debug.xcconfig"; sourceTree = "<group>"; };
 		51CCEB18B4E6162EF1CD6298 /* Pods_MapProj.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapProj.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85276DA6B059FEECE36C5733 /* Pods-MapProj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapProj.release.xcconfig"; path = "Target Support Files/Pods-MapProj/Pods-MapProj.release.xcconfig"; sourceTree = "<group>"; };
+		B941F22F2836D09A00BE841C /* MapsViewController+ManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapsViewController+ManagerDelegate.swift"; sourceTree = "<group>"; };
+		B941F2312836D1EA00BE841C /* MapsViewController+MapViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapsViewController+MapViewDelegate.swift"; sourceTree = "<group>"; };
+		B941F2342836D8CA00BE841C /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		B951821C282D91750068A165 /* ColorScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
 		B951821D282D91750068A165 /* IcNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IcNames.swift; sourceTree = "<group>"; };
 		B9518225282D93520068A165 /* ValidationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ValidationTableViewCell.xib; sourceTree = "<group>"; };
@@ -85,6 +97,12 @@
 		B9518257282D93520068A165 /* AuthorisationTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AuthorisationTableViewController.xib; sourceTree = "<group>"; };
 		B9518279282D9A640068A165 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		B9518282282ED9790068A165 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B960C08028357C4F000F1CD8 /* MapsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewModel.swift; sourceTree = "<group>"; };
+		B960C08328358278000F1CD8 /* Buttons+Reactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Buttons+Reactive.swift"; sourceTree = "<group>"; };
+		B980A18B28381CCB002C67FB /* MapsViewController+Reactive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapsViewController+Reactive.swift"; sourceTree = "<group>"; };
+		B980A18D283984E0002C67FB /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		B980A18F283A18A8002C67FB /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		B980A191283A18D4002C67FB /* FloatingPoint+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+Extensions.swift"; sourceTree = "<group>"; };
 		E04B13D128147BF000058026 /* MapProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E04B13D428147BF000058026 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E04B13D628147BF000058026 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +136,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B941F2332836D8BD00BE841C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B941F2342836D8CA00BE841C /* Point.swift */,
+				B980A18D283984E0002C67FB /* Coordinates.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B951821B282D91750068A165 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +158,7 @@
 		B9518220282D92B90068A165 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				B960C07D28357B9A000F1CD8 /* Maps */,
 				B951824E282D93520068A165 /* Authorisation */,
 				B9518221282D93520068A165 /* Presentetion */,
 			);
@@ -314,6 +342,43 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		B960C07D28357B9A000F1CD8 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				B941F2332836D8BD00BE841C /* Model */,
+				B960C07F28357BAC000F1CD8 /* ViewModel */,
+				B960C07E28357BA1000F1CD8 /* ViewController */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
+		B960C07E28357BA1000F1CD8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E04B13D828147BF000058026 /* MapsViewController.swift */,
+				B941F22F2836D09A00BE841C /* MapsViewController+ManagerDelegate.swift */,
+				B941F2312836D1EA00BE841C /* MapsViewController+MapViewDelegate.swift */,
+				B980A18B28381CCB002C67FB /* MapsViewController+Reactive.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B960C07F28357BAC000F1CD8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B960C08028357C4F000F1CD8 /* MapsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B960C0822835825D000F1CD8 /* Reactive */ = {
+			isa = PBXGroup;
+			children = (
+				B960C08328358278000F1CD8 /* Buttons+Reactive.swift */,
+			);
+			path = Reactive;
+			sourceTree = "<group>";
+		};
 		CDE96B5AA01699337491801F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -350,7 +415,6 @@
 				E04B1434281DCACD00058026 /* Extensions */,
 				E04B13D428147BF000058026 /* AppDelegate.swift */,
 				E04B13D628147BF000058026 /* SceneDelegate.swift */,
-				E04B13D828147BF000058026 /* MapsViewController.swift */,
 				E04B13DA28147BF000058026 /* Main.storyboard */,
 				E04B13DD28147BF300058026 /* Assets.xcassets */,
 				E04B13DF28147BF300058026 /* LaunchScreen.storyboard */,
@@ -362,7 +426,10 @@
 		E04B1434281DCACD00058026 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B960C0822835825D000F1CD8 /* Reactive */,
 				E04B1435281DCAE500058026 /* Button+Extensions.swift */,
+				B980A18F283A18A8002C67FB /* Int+Extensions.swift */,
+				B980A191283A18D4002C67FB /* FloatingPoint+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -524,19 +591,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B960C08428358278000F1CD8 /* Buttons+Reactive.swift in Sources */,
 				B9518272282D93520068A165 /* RxViewModelProtocol.swift in Sources */,
 				B9518269282D93520068A165 /* AuthorisationCellModel.swift in Sources */,
 				B951825B282D93520068A165 /* TitleTableViewCell.swift in Sources */,
 				B9518262282D93520068A165 /* ButtonViewCell+ReactiveExtensions.swift in Sources */,
+				B941F2322836D1EA00BE841C /* MapsViewController+MapViewDelegate.swift in Sources */,
 				B9518283282ED9790068A165 /* User.swift in Sources */,
+				B941F2302836D09A00BE841C /* MapsViewController+ManagerDelegate.swift in Sources */,
 				B9518259282D93520068A165 /* ValidationTableViewCell.swift in Sources */,
 				B9518263282D93520068A165 /* TextButtonCellModel.swift in Sources */,
 				B9518265282D93520068A165 /* TextFieldCellModel.swift in Sources */,
 				B951826E282D93520068A165 /* String+Additions.swift in Sources */,
 				B951826D282D93520068A165 /* UIFonts+Additions.swift in Sources */,
+				B980A18E283984E0002C67FB /* Coordinates.swift in Sources */,
 				B9518271282D93520068A165 /* RxTableViewCell.swift in Sources */,
+				B960C08128357C4F000F1CD8 /* MapsViewModel.swift in Sources */,
 				B951826B282D93520068A165 /* AppStep.swift in Sources */,
 				B9518261282D93520068A165 /* ButtonTableViewCell.swift in Sources */,
+				B980A190283A18A8002C67FB /* Int+Extensions.swift in Sources */,
 				B951821F282D91750068A165 /* IcNames.swift in Sources */,
 				E04B13D928147BF000058026 /* MapsViewController.swift in Sources */,
 				E04B1436281DCAE500058026 /* Button+Extensions.swift in Sources */,
@@ -544,14 +617,17 @@
 				B951825D282D93520068A165 /* TextFieldTableViewCell.swift in Sources */,
 				E04B13D528147BF000058026 /* AppDelegate.swift in Sources */,
 				B9518275282D93520068A165 /* AuthorisationFlow.swift in Sources */,
+				B980A192283A18D4002C67FB /* FloatingPoint+Extensions.swift in Sources */,
 				B9518266282D93520068A165 /* ValidationCellModel.swift in Sources */,
 				B951821E282D91750068A165 /* ColorScheme.swift in Sources */,
 				B9518274282D93520068A165 /* RxAuthorisationDataSource.swift in Sources */,
 				B9518267282D93520068A165 /* TitleCellModel.swift in Sources */,
+				B980A18C28381CCB002C67FB /* MapsViewController+Reactive.swift in Sources */,
 				E0C8AB8428245B4200DA36E9 /* Route.swift in Sources */,
 				B951826C282D93520068A165 /* UIViewController+Additions.swift in Sources */,
 				B9518264282D93520068A165 /* ButtonCellModel.swift in Sources */,
 				E04B13D728147BF000058026 /* SceneDelegate.swift in Sources */,
+				B941F2352836D8CA00BE841C /* Point.swift in Sources */,
 				B9518276282D93520068A165 /* AuthorisationTableViewController.swift in Sources */,
 				E0C8AB8628245ECD00DA36E9 /* Coordinate.swift in Sources */,
 				B9518273282D93520068A165 /* AuthorisationViewModel.swift in Sources */,
