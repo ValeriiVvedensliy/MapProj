@@ -13,6 +13,7 @@ class MapsViewController: UIViewController {
   @IBOutlet weak var startRouteButton: UIButton!
   @IBOutlet weak var stopRouteButton: UIButton!
   @IBOutlet weak var showRouteButton: UIButton!
+  @IBOutlet weak var setAvatarButton: UIButton!
   private let disposeBag = DisposeBag()
   
   var viewModel: MapsViewModel!
@@ -23,6 +24,7 @@ class MapsViewController: UIViewController {
   var route: GMSPolyline?
   var timer = Timer()
   var stepsCoords:[CLLocationCoordinate2D] = []
+  var imagePicker: ImagePicker!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -35,12 +37,14 @@ class MapsViewController: UIViewController {
   }
 
   private func setUpView() {
+    imagePicker = ImagePicker(presentationController: self, delegate: self)
     setUpTextField(placeholde: Constants.firstTextField, textField: firstPointField)
     setUpTextField(placeholde: Constants.secondTextField, textField: secondPointField)
 
     setUpButtons(text: Constants.startButtonText, button: startRouteButton)
     setUpButtons(text: Constants.stopButtonText, button: stopRouteButton)
     setUpButtons(text: Constants.showRouteButtonText, button: showRouteButton)
+    setUpButtons(text: Constants.avatarButtonText, button: setAvatarButton)
   }
 
   private func setupBindigs() {
@@ -75,6 +79,14 @@ class MapsViewController: UIViewController {
     showRouteButton.rx.tap
       .map { _ in Void() }
       .bind(to: viewModel.input.showRoute)
+      .disposed(by: disposeBag)
+
+    setAvatarButton.rx.tap
+      .bind { [weak self] _ in
+        guard let self = self else { return }
+
+        self.imagePicker.present(from: self.setAvatarButton)
+      }
       .disposed(by: disposeBag)
   }
 
@@ -256,15 +268,27 @@ class MapsViewController: UIViewController {
   }
 
   private func setupImageForMarket() {
-    let image = #imageLiteral(resourceName: "arrow")
-    let size = CGSize(width: 30.0, height: 30.0)
+    let image = #imageLiteral(resourceName: IcNames.IcAvatar)
+    marker.icon = configImage(image: image)
+    marker.map = mapView
+  }
+
+  public func configImage(image: UIImage) -> UIImage {
+    let size = CGSize(width: 30, height: 30)
     UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
     image.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
     let newImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
     UIGraphicsEndImageContext()
 
-    marker.icon = newImage
-    marker.map = mapView
+    return newImage
+  }
+}
+
+extension MapsViewController: ImagePickerDelegate {
+  func didSelect(image: UIImage?) {
+    guard let image = image else { return }
+  
+    self.marker.icon = self.configImage(image: image)
   }
 }
 
@@ -272,7 +296,8 @@ private enum Constants {
   // String
   static let firstTextField = "Maps.From".localizationString
   static let secondTextField = "Maps.To".localizationString
-  static let startButtonText = "Maps.Stop.Route".localizationString
-  static let stopButtonText = "Maps.Start.Route".localizationString
+  static let startButtonText = "Maps.Start.Route".localizationString
+  static let stopButtonText = "Maps.Stop.Route".localizationString
   static let showRouteButtonText = "Maps.Show.Route".localizationString
+  static let avatarButtonText = "Maps.Avatar.Button.Text".localizationString
 }
