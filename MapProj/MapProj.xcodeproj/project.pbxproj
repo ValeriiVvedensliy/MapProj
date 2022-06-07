@@ -48,6 +48,7 @@
 		B980A18E283984E0002C67FB /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B980A18D283984E0002C67FB /* Coordinates.swift */; };
 		B980A190283A18A8002C67FB /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B980A18F283A18A8002C67FB /* Int+Extensions.swift */; };
 		B980A192283A18D4002C67FB /* FloatingPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B980A191283A18D4002C67FB /* FloatingPoint+Extensions.swift */; };
+		B9F00290284FDC1600B5DB67 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F0028F284FDC1600B5DB67 /* ImagePicker.swift */; };
 		E04B13D528147BF000058026 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04B13D428147BF000058026 /* AppDelegate.swift */; };
 		E04B13D728147BF000058026 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04B13D628147BF000058026 /* SceneDelegate.swift */; };
 		E04B13D928147BF000058026 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04B13D828147BF000058026 /* MapsViewController.swift */; };
@@ -103,6 +104,7 @@
 		B980A18D283984E0002C67FB /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
 		B980A18F283A18A8002C67FB /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
 		B980A191283A18D4002C67FB /* FloatingPoint+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+Extensions.swift"; sourceTree = "<group>"; };
+		B9F0028F284FDC1600B5DB67 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		E04B13D128147BF000058026 /* MapProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E04B13D428147BF000058026 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E04B13D628147BF000058026 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 		B951824A282D93520068A165 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				B9F0028E284FDC0400B5DB67 /* ImagePicker */,
 				B951824B282D93520068A165 /* RxUITools */,
 				B951824D282D93520068A165 /* RxViewModelProtocol.swift */,
 			);
@@ -377,6 +380,14 @@
 				B960C08328358278000F1CD8 /* Buttons+Reactive.swift */,
 			);
 			path = Reactive;
+			sourceTree = "<group>";
+		};
+		B9F0028E284FDC0400B5DB67 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				B9F0028F284FDC1600B5DB67 /* ImagePicker.swift */,
+			);
+			path = ImagePicker;
 			sourceTree = "<group>";
 		};
 		CDE96B5AA01699337491801F /* Pods */ = {
@@ -608,6 +619,7 @@
 				B9518271282D93520068A165 /* RxTableViewCell.swift in Sources */,
 				B960C08128357C4F000F1CD8 /* MapsViewModel.swift in Sources */,
 				B951826B282D93520068A165 /* AppStep.swift in Sources */,
+				B9F00290284FDC1600B5DB67 /* ImagePicker.swift in Sources */,
 				B9518261282D93520068A165 /* ButtonTableViewCell.swift in Sources */,
 				B980A190283A18A8002C67FB /* Int+Extensions.swift in Sources */,
 				B951821F282D91750068A165 /* IcNames.swift in Sources */,

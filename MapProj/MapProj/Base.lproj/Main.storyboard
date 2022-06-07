@@ -59,14 +59,24 @@
                                             <constraint firstAttribute="height" constant="48" id="k1k-0z-qrd"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANI-d4-wZG">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="H8q-V5-MPZ">
                                         <rect key="frame" x="0.0" y="174" width="382" height="48"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="48" id="1Sc-6S-WOP"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                    </button>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ryg-2w-44m">
+                                                <rect key="frame" x="0.0" y="0.0" width="178" height="48"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ANI-d4-wZG">
+                                                <rect key="frame" x="204" y="0.0" width="178" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="1Sc-6S-WOP"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -86,6 +96,7 @@
                         <outlet property="firstPointField" destination="IXJ-SQ-TTt" id="acJ-tx-JDK"/>
                         <outlet property="mapView" destination="Mrf-RB-F8O" id="N1Z-wC-xf1"/>
                         <outlet property="secondPointField" destination="7jW-Lz-Qql" id="dc6-pU-HEH"/>
+                        <outlet property="setAvatarButton" destination="Ryg-2w-44m" id="KoQ-Nr-8o0"/>
                         <outlet property="showRouteButton" destination="ANI-d4-wZG" id="ZLp-i8-gL5"/>
                         <outlet property="startRouteButton" destination="QzM-P2-exh" id="XdJ-ta-OYV"/>
                         <outlet property="stopRouteButton" destination="Qzm-sW-qe0" id="1Oc-5z-WWo"/>
